@@ -35,64 +35,6 @@
         line-height: 1.6;
         scroll-behavior: smooth;
       }
-
-      /* Glassmorphism Nav */
-      nav {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
-        padding: 1rem;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-      }
-
-      .nav-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .nav-logo {
-        font-size: 1.5rem;
-        font-weight: 700;
-        background: var(--gradient-1);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-decoration: none;
-      }
-
-      .nav-links {
-        display: flex;
-        gap: 2rem;
-      }
-
-      nav a {
-        color: var(--text);
-        text-decoration: none;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        position: relative;
-      }
-
-      nav a::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: -4px;
-        left: 0;
-        background: var(--gradient-1);
-        transition: width 0.3s ease;
-      }
-
-      nav a:hover::after {
-        width: 100%;
-      }
-
       /* Stunning Header */
       header {
         min-height: 100vh;
@@ -391,10 +333,6 @@
           font-size: 3rem;
         }
 
-        .nav-links {
-          display: none;
-        }
-
         section {
           margin: 3rem 1rem;
           padding: 2rem;
@@ -403,18 +341,6 @@
     </style>
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <a href="#home" class="nav-logo">LP</a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </nav>
-
     <header id="home">
       <div class="floating-shapes">
         <!-- Generated via JavaScript -->
