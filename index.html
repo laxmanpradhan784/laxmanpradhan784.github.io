@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Laxman Pradhan - Portfolio</title>
 
-    <!-- Add Google Fonts for better typography -->
+    <!-- Google Fonts for better typography -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Add simple CSS styles -->
+    <!-- Simple CSS for layout -->
     <style>
         /* General styles */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7fc;
+            background-color: #f9f9f9;
             color: #333;
         }
 
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 15px 0;
+            padding: 20px 0;
             text-align: center;
         }
 
@@ -57,11 +57,24 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        section h2 {
+        section h2,
+        section h3 {
             color: #4CAF50;
+        }
+
+        section h2 {
             border-bottom: 2px solid #4CAF50;
             padding-bottom: 5px;
             margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        section ul li {
+            margin: 10px 0;
         }
 
         section p {
@@ -69,23 +82,19 @@
             line-height: 1.6;
         }
 
-        ul {
-            list-style-type: none;
-            padding-left: 0;
+        /* Skills Section */
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
-        ul li {
-            margin: 10px 0;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: #4CAF50;
+        .skills ul li {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
             font-weight: bold;
-        }
-
-        ul li a:hover {
-            color: #333;
         }
 
         /* Footer styles */
@@ -102,47 +111,87 @@
 </head>
 
 <body>
+
     <!-- Header Section -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Hi 👋, I'm Laxman Pradhan</h1>
+        <p>Passionate full-stack developer from India</p>
     </header>
 
     <!-- Navbar Section -->
     <nav>
         <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm a passionate web developer with expertise in front-end and back-end development. I love
-            solving problems and creating efficient solutions for users. With experience in technologies like HTML, CSS,
-            JavaScript, and PHP, I am always eager to learn and work on exciting projects.</p>
+        <p>Hello! I'm a passionate full-stack developer from India. I specialize in both front-end and back-end development. With a strong foundation in technologies like HTML, CSS, JavaScript, PHP, and Laravel, I enjoy creating dynamic, user-friendly applications. I am always excited to work on new and innovative projects and am constantly learning to stay updated with the latest trends in technology.</p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Here are some of the projects I’ve worked on:</p>
+    <!-- Work Section -->
+    <section id="work">
+        <h2>Work</h2>
+        <p>🔭 I’m currently working on <a href="https://decorsathi.com/" target="_blank">Decorsathi</a></p>
+        <p>👯 I’m looking to collaborate on <a href="https://decorsathi.com/" target="_blank">Decorsathi</a></p>
+        <p>🤝 I’m looking for help with <a href="https://decorsathi.com/" target="_blank">Decorsathi</a></p>
+    </section>
+
+    <!-- Currently Learning Section -->
+    <section id="learning">
+        <h2>🌱 I’m currently learning</h2>
+        <p>Python</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <h3>Programming Languages</h3>
         <ul>
-            <li><a href="https://github.com/laxmanpradhan784/project1" target="_blank">Project 1</a> - A web app for task management.</li>
-            <li><a href="https://github.com/laxmanpradhan784/project2" target="_blank">Project 2</a> - A portfolio website.</li>
-            <li><a href="https://github.com/laxmanpradhan784/project3" target="_blank">Project 3</a> - E-commerce platform built with Laravel.</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Swift</li>
+            <li>C#</li>
+        </ul>
+        <h3>Frontend Development</h3>
+        <ul>
+            <li>React</li>
+            <li>Vue.js</li>
+            <li>Angular</li>
+            <li>Bootstrap</li>
+            <li>Tailwind</li>
+        </ul>
+        <h3>Backend Development</h3>
+        <ul>
+            <li>Laravel</li>
+            <li>Node.js</li>
+            <li>GraphQL</li>
+            <li>Express</li>
+        </ul>
+        <h3>Databases</h3>
+        <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
         </ul>
     </section>
 
-    <!-- Contact Section (Optional) -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>If you'd like to collaborate on a project or just want to say hi, feel free to reach out!</p>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>📫 You can reach me via email: <a href="mailto:laxmanpradhan784@gmail.com">laxmanpradhan784@gmail.com</a></p>
+        <p>👨‍💻 All of my projects are available at: <a href="https://laxmanpradhan784.github.io/" target="_blank">My GitHub Portfolio</a></p>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Your Name | All rights reserved</p>
+        <p>&copy; 2025 Laxman Pradhan | All rights reserved</p>
     </footer>
 
 </body>
